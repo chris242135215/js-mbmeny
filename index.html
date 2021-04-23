@@ -1,1 +1,47 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Space Bowling</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="variables.js"></script>
+</head>
+
+<body>
+	<div id="clouds"></div>
+	<div class="background" id="houses"></div>
+	<div class="background" id="trees"></div>
+	<div class="background" id="landmarks"></div>
+	<div class="background" id="lanes"></div>
+	<div class="background" id="grass"></div>
+	<div id="gameStats" class="stats">
+		<p class="noSelect ui-top"><span id="pins"></span><span id="gameRemaining"></span></p>
+		<p class="noSelect ui-bottom"><span id="tries"></span><span class="gameScore"></span></p>
+		<p class="noSelect"><a class="gameReset" href="" id="reset"></a></p>
+	</div>
+	<img class="noSelect" src="images/sepp_rot.gif" alt="Sepp" id="sepp" />
+	<div id="game">
+		<div id="gameUI">
+			<div id="gameIntro">
+				<h1 class="noSelect" id="title"></h1>
+				<p class="noSelect" id="subtitle"></p>
+				<p class="noSelect"><a id="gamePlay" class="button" href=""></a></p>
+			</div>
+
+			<div id="gameComplete">
+				<h1 class="noSelect" id="youwon"></h1>
+				<p class="noSelect"><span id="wontext"></span><span class="gameScore"></span></p>
+				<p class="noSelect"><a class="gameReset button" href="" id="retry"></a></p>
+			</div>
+		</div>
+		<canvas id="gameCanvas" width="1920" height="500">
+			<!-- Insert fallback content here -->
+		</canvas>
+	</div>
+	<img class="logo" src="images/br_logo.png" />
+</body>
+
+</html>

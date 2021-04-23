@@ -1,0 +1,17 @@
+Filter zur Verwendung:
+
+(Quelle: https://developer.mozilla.org/de/docs/Web/CSS/filter)
+
+- blur(7px) : Macht das Bild Unscharf (Angabe in Pixeln)
+- brightness(1) : Helligkeit des Bildes (0 (dunkel) - 1 (hell))
+- contrast(1) : Passt den Kontrast an (0% schwarz, 100% ist so, 200% mehr kontrast)
+- drop-shadow(1px 1px 3px 2px black) : Erstellt einen Schatten
+- grayscale(100%) : Schwarz-Weiß-Filter
+- hue-rotate(90deg) : Rotiert die Farben um den Winkel
+- invert(100%) : Dreht die Farben um
+- opacity(100%) : Macht das Bild transparent
+- saturate(100%) : sättigt das Ursprunsbild
+- sepia(1) : Sepia-Effekt
+
+Filter können auch kombiniert werden, zB
+sepia(0.75) invert(100%)

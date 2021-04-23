@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Lobster';
+	src: url('../fonts/Lobster-Regular.woff2') format('woff2'),
+		url('../fonts/Lobster-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Press Start 2P';
+	src: url('../fonts/PressStart2P-Regular.woff2') format('woff2'),
+		url('../fonts/PressStart2P-Regular.woff') format('woff'),
+		url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+canvas {
+	display: block;
+}
+
+body {
+	background: #000;
+	color: #fff;
+	font-family: 'Press Start 2P', Verdana, Arial, sans-serif;
+}
+
+#clouds {
+	background-image: url('../images/clouds.png');
+	background-clip: content-box;
+	background-position-x: 0px;
+	background-position-y: top;
+	width: 100%;
+	height: 375px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.background {
+	background-clip: content-box;
+	background-position-x: left;
+	background-position-y: top;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#landmarks {
+	background-image: url('../images/landmarks.png');
+}
+#houses {
+	background-image: url('../images/houses.png');
+}
+#trees {
+	background-image: url('../images/trees.png');
+}
+#lanes {
+	background-image: url('../images/lanes_stadt.png');
+}
+#grass {
+	background-image: url('../images/grass.png');
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.logo {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 200px;
+	height: auto;
+}
+
+.stats {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	left: 33px;
+	bottom: 40px;
+	height: 80px;
+	width: 1732px;
+	z-index: 2000;
+}
+
+.ui-bottom {
+	margin-top: 5px;
+}
+
+p {
+	margin: 0 20px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.button {
+	background: #185da8;
+	border-radius: 5px;
+	display: block;
+	font-size: 30px;
+	margin: 0 auto;
+	margin-top: 25px;
+	padding: 10px;
+	width: 200px;
+}
+
+a.button:hover {
+	background: #2488f5;
+	color: #fff;
+	text-decoration: none;
+}
+
+#sepp {
+	position: absolute;
+	left: 50px;
+	bottom: 335px;
+	width: 120px;
+	height: auto;
+}
+
+#game {
+	height: 500px;
+	left: 0;
+	bottom: 167px;
+	position: absolute;
+	width: 1920px;
+}
+
+#gameCanvas {
+	background: transparent;
+}
+
+#gameUI {
+	height: 500px;
+	position: absolute;
+	/* Places UI on top of the canvas */
+	width: 1920px;
+}
+
+#gameIntro,
+#gameComplete {
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 100px;
+	padding: 40px 0;
+	text-align: center;
+}
+
+#gameStats .gameReset {
+	position: absolute;
+	right: 100px;
+	top: 0;
+}
+
+.noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
